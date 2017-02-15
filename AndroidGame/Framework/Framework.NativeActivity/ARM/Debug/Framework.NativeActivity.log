@@ -1,0 +1,21 @@
+﻿  ANDROID_HOME=C:\ProgramData\Microsoft\android-sdk
+  ANT_HOME=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Apps\apache-ant-1.9.3\
+  JAVA_HOME=C:\Program Files (x86)\Java\jdk1.7.0_55
+  NDK_ROOT=C:\ProgramData\Microsoft\AndroidNDK\android-ndk-r10e
+  pch.h
+  android_native_app_glue.c
+  Component.cpp
+  In file included from Source\Component\Component.h:4:0,
+                   from Source\Component\Component.cpp:1:
+  C:\Users\BOSS\Documents\AndroidGame\AndroidGame\Framework\Framework.NativeActivity/Source\Entitiy\Entity.h: In constructor 'framework::EntityDesc::EntityDesc(std::string&&, int, bool)':
+C:\Users\BOSS\Documents\AndroidGame\AndroidGame\Framework\Framework.NativeActivity/Source\Entitiy\Entity.h(11,3): warning : 'framework::EntityDesc::name' is initialized with itself [-Winit-self]
+     EntityDesc(std::string&&  _name = "GameObject",
+     ^
+  Entity.cpp
+  In file included from Source\Entitiy\Entity.cpp:1:0:
+  Source\Entitiy\Entity.h: In constructor 'framework::EntityDesc::EntityDesc(std::string&&, int, bool)':
+Source\Entitiy\Entity.h(11,3): warning : 'framework::EntityDesc::name' is initialized with itself [-Winit-self]
+     EntityDesc(std::string&&  _name = "GameObject",
+     ^
+  C:\ProgramData\Microsoft\AndroidNDK\android-ndk-r10e\toolchains\arm-linux-androideabi-4.9\prebuilt\windows\bin\arm-linux-androideabi-ar.exe: creating C:\Users\BOSS\Documents\AndroidGame\AndroidGame\proj.visualstudio\ARM\Debug\libFramework.a
+  Framework.NativeActivity.vcxproj -> C:\Users\BOSS\Documents\AndroidGame\AndroidGame\proj.visualstudio\ARM\Debug\libFramework.a
